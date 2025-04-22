@@ -1,0 +1,221 @@
+/* Sidebar.css */
+
+/* Mobile Toggle Button */
+.mobile-toggle {
+  display: block;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.mobile-toggle:hover {
+  background: #34495e;
+}
+
+/* Sidebar Main Styles */
+.sidebar {
+  width: 250px;
+  height: 90vh;
+  background: #2c3e50;
+  position: fixed;
+  left: -250px;
+  top: 60px;
+  padding: 20px 0;
+  /* z-index: 1002; */
+  transition: all 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Overlay for Mobile */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+.sidebar.open + .sidebar-overlay {
+  display: block;
+}
+
+/* Sidebar Menu Items */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  position: relative;
+  border-bottom: 1px solid #34495e;
+}
+
+.sidebar-menu li:last-child {
+  border-bottom: none;
+}
+
+.sidebar-menu,
+.sidebar-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* If you still see dots, add this */
+.sidebar-menu li::before {
+  content: none !important;
+}
+
+/* For nested dropdown menus */
+.sub-menu {
+  list-style: none !important;
+}
+
+.sidebar-menu li a,
+.sidebar-menu li button {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 12px 25px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li button:hover {
+  background: #34495e;
+}
+
+/* Dropdown Styles */
+.has-dropdown .sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 15px;
+  background: #34495e;
+}
+
+.has-dropdown.active .sub-menu {
+  max-height: 1000px; /* Adjust based on your needs */
+}
+
+.arrow {
+  float: right;
+  transition: transform 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.has-dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.sub-menu li a {
+  padding: 10px 25px;
+  font-size: 0.9rem;
+}
+
+.sub-menu li a:hover {
+  background: #2c3e50;
+}
+
+/* Responsive Desktop Styles */
+@media (min-width: 768px) {
+  .mobile-toggle {
+    display: none;
+  }
+
+  .sidebar {
+    left: 0;
+  }
+
+  .sidebar-overlay {
+    display: none !important;
+  }
+}
+
+/* Optional: Scrollbar Styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #2c3e50;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #34495e;
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #3b5368;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: none;
+}
+.sidebar-overlay.show {
+  display: block;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  margin-top: auto; /* Pushes to bottom */
+  text-align: center;
+  border-top: 1px solid #34495e;
+}
+
+.sidebar-button {
+  background: #34495e;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar-button:hover {
+  background: #3b5368;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .sidebar-footer {
+    padding: 15px;
+  }
+
+  .sidebar-button {
+    width: 100%;
+    padding: 12px;
+  }
+}

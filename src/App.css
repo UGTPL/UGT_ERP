@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+.main-content {
+  margin-left: 250px; /* Same as sidebar width */
+  margin-top: 60px; /* Same as navbar height */
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

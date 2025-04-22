@@ -1,0 +1,475 @@
+/* .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dropdown-section {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e0e0e0;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-header:hover {
+  background: #d5d5d5;
+}
+
+.dropdown-content {
+  padding: 1rem;
+  background: #fff;
+}
+
+.student-form-modal {
+  background: #fff;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.section-title {
+  text-align: left;
+  margin: 20px 0 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+  color: #2c3e50;
+}
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qualification-table {
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.qualification-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.qualification-table th,
+.qualification-table td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.qualification-table input {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-row-button {
+  margin-top: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-row-button:hover {
+  background-color: #2980b9;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.span-2 {
+  grid-column: span 2;
+} */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.student-form-modal {
+  background: #fff;
+  width: 80%;
+  max-width: 1100px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.section-title {
+  text-align: left;
+  margin: 16px 0 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-left: 3px solid #3498db;
+  padding-left: 8px;
+  color: #2c3e50;
+}
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 0.85rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.dropdown-section {
+  margin-bottom: 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  padding: 0.9rem;
+  background: #fff;
+}
+
+.qualification-table {
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+.qualification-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.qualification-table th,
+.qualification-table td {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.qualification-table input {
+  width: 100%;
+  padding: 4px 6px;
+  font-size: 0.85rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-row-button {
+  margin-top: 8px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-row-button:hover {
+  background-color: #2980b9;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.submit-button {
+  padding: 8px 16px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+/* Section Container */
+.form-section {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fdfdfd;
+  margin-bottom: 0.05rem;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Dropdown Header */
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eef3f8;
+
+  padding: 0.4rem 0.7rem;
+  padding-right: 55rem;
+  cursor: pointer;
+  border-bottom: 1px solid #dcdcdc;
+  transition: background 0.3s ease;
+}
+
+.dropdown-header:hover {
+  background: #d9e3ec;
+}
+
+.dropdown-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2a3b47;
+  flex: 1;
+  text-align: left;
+}
+
+/* Toggle Icon */
+.dropdown-header span {
+  font-size: 1rem;
+  color: #3c4c5c;
+  transition: transform 0.2s ease;
+}
+
+.form-section.open .dropdown-header span {
+  transform: rotate(90deg);
+}
+
+/* Dropdown Content */
+.section-body {
+  padding: 0.4rem 1rem;
+  background: #ffffff;
+}
+
+/* Form Fields */
+.form-group {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Label styling */
+.form-group label {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #333;
+  text-align: right;
+}
+
+/* Input, select, textarea styling */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 6px 8px;
+  font-size: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Optional: adjust for very small fields */
+.form-group.small label {
+  grid-template-columns: 100px 1fr;
+  font-size: 0.85rem;
+}
+
+.form-group.small input,
+.form-group.small select,
+.form-group.small textarea {
+  padding: 4px 6px;
+  font-size: 0.8rem;
+}
+
+/* Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+/* Optional: Smooth Section Expand/Collapse */
+.section-body {
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
