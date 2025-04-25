@@ -8,10 +8,44 @@
 }
 
 .main-content {
-  margin-left: 250px; /* Same as sidebar width */
-  margin-top: 60px; /* Same as navbar height */
+  margin-left: 250px;
+  margin-top: 60px;
   padding: 20px;
   min-height: calc(100vh - 60px);
+}
+
+/* Tablet Screens (768px - 1024px) */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 200px;
+    padding: 15px;
+  }
+}
+
+/* Small Tablets (600px - 768px) */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+    margin-top: 50px; /* Adjust if mobile header is smaller */
+  }
+}
+
+/* Mobile Screens (up to 480px) */
+@media (max-width: 480px) {
+  .main-content {
+    padding: 10px;
+    margin-top: 50px; /* Adjust based on mobile header height */
+    min-height: calc(100vh - 50px); /* Match margin-top adjustment */
+  }
+}
+
+/* Optional: Landscape orientation for mobile */
+@media (max-height: 480px) and (orientation: landscape) {
+  .main-content {
+    min-height: auto;
+    padding: 10px 15px;
+  }
 }
 
 .content-wrapper {

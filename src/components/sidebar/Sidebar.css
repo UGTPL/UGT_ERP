@@ -23,13 +23,13 @@
 
 /* Sidebar Main Styles */
 .sidebar {
-  width: 250px;
-  height: 90vh;
+  width: 220px;
+  height: 95vh;
   background: #2c3e50;
   position: fixed;
   left: -250px;
   top: 60px;
-  padding: 20px 0;
+  padding: 15px 0;
   /* z-index: 1002; */
   transition: all 0.3s ease-in-out;
   overflow-y: auto;
@@ -100,7 +100,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  font-size: 0.95rem;
+  font-size: 0.7rem;
 }
 
 .sidebar-menu li a:hover,
@@ -124,7 +124,7 @@
 .arrow {
   float: right;
   transition: transform 0.3s ease;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .has-dropdown.active .arrow {
@@ -133,7 +133,7 @@
 
 .sub-menu li a {
   padding: 10px 25px;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 
 .sub-menu li a:hover {
