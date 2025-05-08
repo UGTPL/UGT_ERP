@@ -22,12 +22,24 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 200px;
+    padding: 15px;
+  }
+}
+
 /* Small Tablets (600px - 768px) */
 @media (max-width: 768px) {
   .main-content {
     margin-left: 0;
     padding: 15px;
     margin-top: 50px; /* Adjust if mobile header is smaller */
+  }
+
+  .Sidebar-main{
+    display: none;
+    z-index: 1000;
   }
 }
 

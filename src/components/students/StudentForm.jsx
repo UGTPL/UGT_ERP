@@ -15,6 +15,26 @@ const StudentForm = ({ isOpen, onClose }) => {
     },
   ]);
 
+  const [admissionData, setAdmissionData] = useState({
+    admissionType: "",
+    sourceAdmission: "",
+    referredBy: "",
+    admissionNo: "",
+    admissionDate: "",
+    registrationNo: "",
+    enrollmentNo: "",
+    srNo: "",
+    apaarId: "",
+    penNo: "",
+    rollNo: "",
+    appliedClass: "",
+    section: "",
+    stream: "",
+    educationMedium: "",
+    isRte: "",
+    enrolledClass: "",
+  });
+
   const [isDisabled, setIsDisabled] = useState(false);
   const [isDropout, setIsDropout] = useState(false);
   const [isMinority, setIsMinority] = useState(false);
@@ -131,25 +151,7 @@ const StudentForm = ({ isOpen, onClose }) => {
   const streams = ["Science", "Commerce", "Arts"];
   const mediums = ["English", "Hindi", "Regional"];
 
-  const [admissionData, setAdmissionData] = useState({
-    admissionType: "",
-    sourceAdmission: "",
-    referredBy: "",
-    admissionNo: "",
-    admissionDate: "",
-    registrationNo: "",
-    enrollmentNo: "",
-    srNo: "",
-    apaarId: "",
-    penNo: "",
-    rollNo: "",
-    appliedClass: "",
-    section: "",
-    stream: "",
-    educationMedium: "",
-    isRte: "",
-    enrolledClass: "",
-  });
+  
 
   const handleChange = (e) => {
     setAdmissionData({
