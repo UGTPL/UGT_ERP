@@ -1,14 +1,11 @@
-/* Sidebar.css */
-
-/* Mobile Toggle Button */
 .mobile-toggle {
   display: block;
   position: fixed;
   top: 15px;
   left: 15px;
   z-index: 1001;
-  background: #2c3e50;
-  color: white;
+  background: #abaeb1;
+  /* color: white; */
   border: none;
   padding: 12px 15px;
   border-radius: 4px;
@@ -18,17 +15,17 @@
 }
 
 .mobile-toggle:hover {
-  background: #34495e;
+  background: #ffffff;
 }
 
 .sidebar {
-  width: 220px;
+  width: 170px;
   height: 95vh;
-  background: #2c3e50;
+  background: #fdfdfd;
   position: fixed;
   left: -250px;
-  top: 60px;
-  padding: 15px 0;
+  top: 50px;
+  padding: 8px 0;
   transition: all 0.3s ease-in-out;
   overflow-y: auto;
 }
@@ -44,7 +41,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(194, 191, 191, 0.5);
   z-index: 1000;
   display: none;
 }
@@ -88,9 +85,9 @@
 
 .sidebar-menu li a,
 .sidebar-menu li button {
-  color: #ecf0f1;
+  /* color: #ecf0f1; */
   text-decoration: none;
-  padding: 12px 25px;
+  padding: 10px 10px;
   display: block;
   width: 100%;
   text-align: left;
@@ -103,7 +100,7 @@
 
 .sidebar-menu li a:hover,
 .sidebar-menu li button:hover {
-  background: #34495e;
+  background: #b3b4b6;
 }
 
 /* Dropdown Styles */
@@ -112,7 +109,7 @@
   overflow: hidden;
   transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 15px;
-  background: #34495e;
+  background: #8d8e8f;
 }
 
 .has-dropdown.active .sub-menu {
@@ -135,7 +132,7 @@
 }
 
 .sub-menu li a:hover {
-  background: #2c3e50;
+  background: #e7eaec;
 }
 
 /* Responsive Desktop Styles */
@@ -159,7 +156,7 @@
 }
 
 .sidebar::-webkit-scrollbar-track {
-  background: #2c3e50;
+  background: #9d9fa0;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
@@ -207,7 +204,9 @@
 }
 
 /* For mobile responsiveness */
+
 @media (max-width: 768px) {
+  
   .sidebar-footer {
     padding: 15px;
   }

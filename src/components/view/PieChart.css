@@ -1,0 +1,27 @@
+.pie-chart-container {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+  }
+  
+  .pie-chart-container h3 {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .pie-chart-legend {
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  .legend-item {
+    margin: 3px 0;
+  }
+  
+  .legend-color {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+    border-radius: 50%;
+  }

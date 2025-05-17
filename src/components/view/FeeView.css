@@ -1,0 +1,102 @@
+.fee-main-container{
+    display: flex;
+}
+
+.fee-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 80%;
+  }
+  
+  .fee-summary {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  
+  .general-text {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .red-text {
+    color: red;
+  }
+  
+  .last-year-dues {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .fee-structure {
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .fee-structure h3 {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .blue-button,
+  .red-button {
+    margin-left: 10px;
+    padding: 6px 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .blue-button {
+    background-color: #1e90ff;
+  }
+  
+  .red-button {
+    background-color: #d9534f;
+    float: right;
+  }
+  
+  .fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .fee-table th,
+  .fee-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .fee-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .highlight-green {
+    background-color: #ccff33;
+    font-weight: bold;
+  }
+  
+  .highlight-yellow {
+    background-color: #ffcc00;
+    font-weight: bold;
+  }
+  
+  .highlight-purple {
+    background-color: #ee82ee;
+    font-weight: bold;
+  }
+  
+  .paid {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .due {
+    color: red;
+    font-weight: bold;
+  }

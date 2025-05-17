@@ -1,0 +1,180 @@
+.fee-edit-container {
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.fee-edit-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+
+}
+
+.fee-edit-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2px 0;
+    padding: 2px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .fee-edit-filters label {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .fee-edit-filters select {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 10px;
+    font-size: 12px;
+  }
+  
+  .fee-edit-btn-filter {
+    padding: 4px 12px;
+    font-size: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .fee-edit-btn-filter:hover {
+    background-color: #43a047;
+  }
+
+.fee-edit-subtitle {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.fee-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Fee Table */
+.fee-structure-table {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  font-size: 12px;
+}
+
+.fee-structure-table th,
+.fee-structure-table td {
+  border: 1px solid #ccc;
+  padding: 2px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fee-structure-table th {
+  background-color: #f0f4f8;
+  font-weight: 600;
+}
+
+.fee-structure-table .method-th,
+.fee-structure-table .feetype-th {
+  width: 120px;
+}
+
+.fee-structure-table .total-th {
+    width: 80px;
+  }
+
+
+.fee-structure-table input[type="number"],
+.fee-structure-table select {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.fee-structure-table .text-right {
+  text-align: right;
+}
+
+.summary-row {
+  background-color: #f9fafc;
+  font-weight: bold;
+  
+}
+
+.total-label {
+  text-align: end;
+}
+
+.total-value {
+  text-align: right;
+  background-color: #e6f7ff;
+}
+
+.fee-edit-actions {
+  margin-top: 5px;
+}
+
+.fee-edit-btn-update {
+  background-color: #28a745;
+  color: white;
+  padding: 2px 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fee-edit-activity-log {
+  margin-top: 15px;
+  border-top: 1px solid grey;
+}
+
+.log-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.activity-log-wrapper {
+  overflow-x: auto;
+}
+
+.activity-log-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  background-color: #fff9f4;
+}
+
+.activity-log-table th,
+.activity-log-table td {
+  padding: 5px;
+  border: 1px solid #e2cfcf;
+  text-align: center;
+  font-size: 12px;
+}
+
+.activity-log-table th {
+  background-color: #ffe8d9;
+}

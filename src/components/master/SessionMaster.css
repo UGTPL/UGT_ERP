@@ -1,0 +1,74 @@
+.session-master-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.session-master-container {
+  width: 600px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.session-master-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1976d2;
+}
+
+.session-master-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.session-master-container table th,
+.session-master-container table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.session-master-container table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.session-master-container input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.session-master-container button {
+  background-color: #1976d2;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.session-master-container button:hover {
+  background-color: #115293;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}

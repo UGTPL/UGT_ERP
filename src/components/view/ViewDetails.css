@@ -1,0 +1,145 @@
+:root {
+  --bg-light: #fcfdff;
+  --card-bg: #ffffff;
+  --accent: #3a6ea5;
+  --text-primary: #222;
+  --text-secondary: #666;
+  --border-radius: 0.75rem;
+  --font-base: 14px;
+  --font-small: 12px;
+}
+
+body {
+  background-color: var(--bg-light);
+  font-family: "Roboto", sans-serif;
+  color: var(--text-primary);
+  font-size: var(--font-base);
+}
+
+.loading {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--accent);
+}
+
+.student-details-container {
+  padding: 0.5rem;
+  /* max-width: 100%; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.1rem 0.1rem;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.card-body {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.field-row {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0.1rem; */
+  padding-right: 1rem;
+  border-bottom: 1px solid #eaeaea;
+  font-size: var(--font-small);
+  border-right: 1px solid black;
+}
+
+.field-label {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.field-value {
+  font-weight: 400;
+  text-align: left;
+}
+
+.field-value.link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.field-value.link:hover {
+  text-decoration: underline;
+}
+
+/* .parent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.parent-section {
+  background-color: #f9faff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dde6f1;
+}
+
+.parent-title {
+  font-size: var(--font-base);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    grid-template-columns: 1fr;
+  }
+} */
+
+.parent-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-small);
+    /* Ensure entire table is left-aligned */
+    text-align: left;
+  }
+  
+  .parent-table th,
+  .parent-table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #eaeaea;
+    color: var(--text-secondary);
+    /* Align cell content to the left */
+    text-align: left;
+  }
+  
+  .parent-table th {
+    background-color: #f2f8ff;
+    color: var(--text-primary);
+    font-weight: 600;
+  }@media (max-width: 768px) {
+    .student-details-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
